@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Library</h1>
+      <button class="add">Add new book</button>
+    </header>
+    <main></main>
+
+    <div class="modal">
+      <div class="close">X</div>
+      <h3>Add a new book</h3>
+      <form class="book-form">
+        <label for="author">Author:</label><br />
+        <input type="text" id="author" name="author" /><br />
+        <label for="title">Title:</label><br />
+        <input type="text" id="title" name="title" /><br />
+        <label for="pages">Pages:</label><br />
+        <input type="text" id="pages" name="pages" /><br />
+        <label for="read">Read:</label><br />
+        <input type="checkbox" id="read" name="read" /><br />
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="modal-backdrop"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
