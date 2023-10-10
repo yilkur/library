@@ -1,0 +1,97 @@
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* GENERAL STYLES */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #111827;
+  color:#fefefe;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+}
+
+article {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+button {
+  background-color: #d1d5db;
+  padding: .5rem 1rem;
+  border-radius: .4rem;
+  border: 0;
+  font-weight: bold;
+  color: #1f2937;
+  align-self: flex-end;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #1f2937;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 1.2rem;
+  border-radius: 1rem;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 400px;
+  position: relative;
+  box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.05);
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal h3 {
+  margin-top: 0;
+}
